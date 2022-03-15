@@ -11,7 +11,8 @@
 }
 
 body {
-    background: url(images/bg-pattern-top.svg);
+    background: hsl(229, 23%, 23%);
+    /* background: url(images/bg-pattern-top.svg); */
     height: 100vh;
     display: flex;
     flex-flow: column;
@@ -24,7 +25,7 @@ body {
 
 .container {
     min-width: 375px;
-    height: 400px;
+    height: auto;
     margin: auto 0;
     border-radius: 20px;
     background: #fff;
@@ -47,20 +48,45 @@ body {
 }
 
 .profile-details {
-    margin-top: 90px;
-    padding-bottom: 15px;
+    margin: 85px 0 40px 0;
     text-align: center;
 }
 
+.profile-details p+p {
+    color: hsl(227, 10%, 46%);
+    font-size: 90%;
+    font-weight: 400;
+    margin-top: 9px;
+}
+
+.profile-details p {
+    color: hsl(227, 10%, 46%);
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.profile-details p span, .profile-stats-dets p {
+    font-weight: 700;
+    color: #000;
+}
+
 .profile-stats {
+    height: 100px;
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid hsl(227, 10%, 46%);
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid hsl(227, 10%, 86%);
 }
 
-span {
-    display: inline-block;
-    font-weight: 700;
+.profile-stats-dets {
+    flex: 1;
 }
 
-p { margin: 0 0 20px 0;}
+.profile-stats-dets p+p {
+    color: hsl(227, 10%, 46%);
+    font-size: 50%;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 9px;
+}

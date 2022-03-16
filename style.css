@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 .attribution {
-
+    color: #fff;
     font-size: 11px;
 
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(227, 20%, 53%);
 }
 
 body {
@@ -52,7 +52,7 @@ body {
     text-align: center;
 }
 
-.profile-details p+p {
+.profile-details h1+p {
     color: hsl(227, 10%, 46%);
     font-size: 90%;
     font-weight: 400;
@@ -65,7 +65,7 @@ body {
     font-weight: 400;
 }
 
-.profile-details p span, .profile-stats-dets p {
+.profile-details h1 span, .profile-stats-dets p {
     font-weight: 700;
     color: #000;
 }
@@ -81,9 +81,11 @@ body {
 
 .profile-stats-dets {
     flex: 1;
+    display: flex;
+    flex-flow: column-reverse;
 }
 
-.profile-stats-dets p+p {
+.profile-stats-dets h2 {
     color: hsl(227, 10%, 46%);
     font-size: 50%;
     font-weight: 400;
